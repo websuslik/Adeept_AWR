@@ -108,7 +108,7 @@ except:
 	pass
 
 try:
-	os.system("cd //home/pi/create_ap && sudo make install")
+	os.system("cd /home/pi/create_ap && sudo make install")
 except:
 	pass
 
@@ -117,16 +117,16 @@ for x in range(1,4):
 		break
 
 try:
-	os.system('sudo touch //home/pi/startup.sh')
-	with open("//home/pi/startup.sh",'w') as file_to_write:
+	os.system('sudo touch /home/pi/startup.sh')
+	with open("/home/pi/startup.sh",'w') as file_to_write:
 		#file_to_write.write("#!/bin/sh\nsudo python3 " + thisPath + "/server/server.py")
 		file_to_write.write("#!/bin/sh\nsudo python3 " + thisPath + "/server/webServer.py")
 except:
 	pass
 
-os.system('sudo chmod 777 //home/pi/startup.sh')
+os.system('sudo chmod 777 /home/pi/startup.sh')
 
-replace_num('/etc/rc.local','fi','fi\n//home/pi/startup.sh start')
+replace_num('/etc/rc.local','fi','fi\n/home/pi/startup.sh start')
 
 try: #fix conflict with onboard Raspberry Pi audio
 	os.system('sudo touch /etc/modprobe.d/snd-blacklist.conf')
