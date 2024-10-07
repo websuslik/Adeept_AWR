@@ -34,7 +34,7 @@ os.system("sudo apt-get -y autoremove")
 # 		break
 
 for x in range(1,4):
-	if os.system("sudo pip3 install -U pip") == 0:
+	if os.system("sudo pip3 install -U --break-system-packages pip") == 0:
 		break
 
 for x in range(1,4):
@@ -42,7 +42,7 @@ for x in range(1,4):
 		break
 
 for x in range(1,4):
-	if os.system("sudo -H pip3 install --upgrade luma.oled") == 0:
+	if os.system("sudo -H pip3 install --upgrade --break-system-packages luma.oled") == 0:
 		break
 
 for x in range(1,4):
@@ -54,11 +54,11 @@ for x in range(1,4):
 		break
 
 for x in range(1,4):
-	if os.system("sudo pip3 install adafruit-pca9685") == 0:
+	if os.system("sudo pip3 install --break-system-packages adafruit-pca9685") == 0:
 		break
 
 for x in range(1,4):
-	if os.system("sudo pip3 install rpi_ws281x") == 0:
+	if os.system("sudo pip3 install --break-system-packages rpi_ws281x") == 0:
 		break
 
 for x in range(1,4):
@@ -66,7 +66,7 @@ for x in range(1,4):
 		break
 
 for x in range(1,4):
-	if os.system("sudo pip3 install mpu6050-raspberrypi") == 0:
+	if os.system("sudo pip3 install --break-system-packages mpu6050-raspberrypi") == 0:
 		break
 
 try:
@@ -75,19 +75,19 @@ except:
 	print('try again')
 
 for x in range(1,4):
-	if os.system("sudo pip3 install flask") == 0:
+	if os.system("sudo pip3 install --break-system-packages flask") == 0:
 		break
 
 for x in range(1,4):
-	if os.system("sudo pip3 install flask_cors") == 0:
+	if os.system("sudo pip3 install --break-system-packages flask_cors") == 0:
 		break
 
 for x in range(1,4):
-	if os.system("sudo pip3 install websockets") == 0:
+	if os.system("sudo pip3 install --break-system-packages websockets") == 0:
 		break
 
 for x in range(1,4):
-	if os.system("sudo pip3 install numpy") == 0:
+	if os.system("sudo pip3 install --break-system-packages numpy") == 0:
 		break
 
 for x in range(1,4):
@@ -95,7 +95,7 @@ for x in range(1,4):
 		break
 
 for x in range(1,4):
-	if os.system("sudo pip3 install imutils zmq pybase64 psutil") == 0:   ####
+	if os.system("sudo pip3 install --break-system-packages imutils zmq pybase64 psutil") == 0:   ####
 		break
 
 for x in range(1,4):
